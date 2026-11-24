@@ -1,0 +1,129 @@
+@import "tailwindcss";
+
+/* ---------- Theme A (default): dark, bold, colourful ---------- */
+:root {
+  --background: #0b1020;
+  --foreground: #e8eaf6;
+  --brand: #a78bfa;
+  --brand-dark: #f0abfc;
+  --brand-soft: #151a33;
+  --muted: #94a3b8;
+  --soft: #cbd5e1;
+  --line: rgba(255, 255, 255, 0.1);
+  --line-strong: rgba(255, 255, 255, 0.3);
+  --hover: rgba(255, 255, 255, 0.1);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-brand: var(--brand);
+  --color-brand-dark: var(--brand-dark);
+  --color-brand-soft: var(--brand-soft);
+  --color-muted: var(--muted);
+  --color-soft: var(--soft);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-hover: var(--hover);
+  --font-sans: var(--font-sans-latin), var(--font-sans-tamil), system-ui, sans-serif;
+}
+
+body {
+  background:
+    radial-gradient(60rem 30rem at 10% -10%, rgba(139, 92, 246, 0.25), transparent),
+    radial-gradient(50rem 30rem at 100% 10%, rgba(236, 72, 153, 0.18), transparent),
+    var(--background);
+  background-attachment: fixed;
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+.btn-primary {
+  background-image: linear-gradient(90deg, #8b5cf6, #ec4899, #f59e0b);
+  color: #fff;
+  box-shadow: 0 8px 24px rgba(139, 92, 246, 0.35);
+}
+.btn-primary:hover { filter: brightness(1.1); }
+
+.gradient-text {
+  background-image: linear-gradient(90deg, #a78bfa, #f472b6, #fbbf24);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero {
+  border-radius: 1.5rem;
+  border: 1px solid var(--line);
+  background-image: linear-gradient(
+    135deg,
+    rgba(124, 58, 237, 0.3),
+    rgba(192, 38, 211, 0.2),
+    rgba(245, 158, 11, 0.2)
+  );
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  transition: transform 0.2s, border-color 0.2s;
+}
+.card:hover { transform: translateY(-3px); border-color: rgba(244, 114, 182, 0.6); }
+
+/* ---------- Theme D: brand colours from the logo (navy + coral on white) ---------- */
+:root[data-theme="d"] {
+  --background: #f7f9fc;
+  --foreground: #14263d;
+  --brand: #1d4b82;
+  --brand-dark: #1d4b82;
+  --brand-soft: #eaf1fa;
+  --muted: #55657a;
+  --soft: #33465e;
+  --line: #dde5ef;
+  --line-strong: #bccadb;
+  --hover: #eaf1fa;
+}
+
+:root[data-theme="d"] body { background: var(--background); }
+
+:root[data-theme="d"] .btn-primary {
+  background-image: none;
+  background-color: #ff4b47;
+  box-shadow: 0 6px 16px rgba(255, 75, 71, 0.35);
+}
+:root[data-theme="d"] .btn-primary:hover { background-color: #e83c38; filter: none; }
+
+:root[data-theme="d"] .gradient-text {
+  background-image: none;
+  color: #1d4b82;
+}
+
+:root[data-theme="d"] .hero {
+  border: none;
+  border-radius: 2.5rem 6rem 2.5rem 2.5rem;
+  background-image:
+    radial-gradient(circle at 100% 0%, rgba(255, 75, 71, 0.9) 0, rgba(255, 75, 71, 0.9) 7rem, transparent 7.05rem),
+    linear-gradient(135deg, #1d4b82, #163a66);
+  box-shadow: 0 16px 40px rgba(29, 75, 130, 0.3);
+}
+:root[data-theme="d"] .hero .gradient-text { color: #ffffff; }
+:root[data-theme="d"] .hero p { color: #d6e4f5; }
+:root[data-theme="d"] .hero a:not(.btn-primary) {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.55);
+}
+:root[data-theme="d"] .hero a:not(.btn-primary):hover { background: rgba(255, 255, 255, 0.12); }
+
+:root[data-theme="d"] .card {
+  background: #ffffff;
+  border-radius: 1.5rem 0.5rem 1.5rem 0.5rem;
+  border-left: 6px solid #ff4b47;
+  box-shadow: 0 2px 8px rgba(29, 75, 130, 0.08);
+}
+:root[data-theme="d"] .card:hover {
+  transform: translateY(-3px);
+  border-left-color: #1d4b82;
+  box-shadow: 0 12px 24px rgba(29, 75, 130, 0.16);
+}
+:root[data-theme="d"] .text-brand-dark { color: #1d4b82; }

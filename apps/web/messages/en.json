@@ -1,0 +1,60 @@
+{
+  "meta": {
+    "title": "Radiance Academy",
+    "description": "Tuition for Tamil Nadu State Board and CBSE, spoken English, NEET, JEE, IELTS, TNPSC and SSC coaching."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "courses": "Courses",
+    "gallery": "Gallery",
+    "contact": "Contact",
+    "language": "தமிழ்"
+  },
+  "home": {
+    "heroTitle": "Learn with clarity. Grow with confidence.",
+    "heroText": "Radiance Academy offers school tuition, spoken English and competitive exam coaching for students who want to do their best.",
+    "ctaCourses": "Explore courses",
+    "ctaCall": "Call us",
+    "coursesTitle": "What we teach",
+    "whyTitle": "Why Radiance",
+    "why1": "Regular tuition for Tamil Nadu State Board and CBSE",
+    "why2": "Focused coaching for NEET, JEE, IELTS, TNPSC and SSC",
+    "why3": "Personal attention and regular practice tests"
+  },
+  "about": {
+    "title": "About us",
+    "p1": "Radiance Academy coaches students in their regular academics through tuition for both the Tamil Nadu State Board and CBSE syllabus.",
+    "p2": "Alongside school tuition we run spoken English courses, career guidance and coaching for NEET, JEE, IELTS, TNPSC and SSC exams.",
+    "p3": "Our aim is simple: help every student understand concepts deeply and prepare with confidence."
+  },
+  "courses": {
+    "title": "Our courses",
+    "items": {
+      "tuition": { "title": "School Tuition", "desc": "Regular tuition for Tamil Nadu State Board and CBSE students." },
+      "english": { "title": "Spoken English", "desc": "Build fluency and confidence in everyday and professional English." },
+      "career": { "title": "Career Guidance", "desc": "Choose the right stream, course and career path with expert guidance." },
+      "neet": { "title": "NEET", "desc": "Medical entrance preparation with structured practice." },
+      "jee": { "title": "JEE", "desc": "Engineering entrance coaching in Physics, Chemistry and Maths." },
+      "ielts": { "title": "IELTS", "desc": "Listening, reading, writing and speaking practice for study abroad." },
+      "tnpsc": { "title": "TNPSC", "desc": "Coaching for Tamil Nadu Public Service Commission exams." },
+      "ssc": { "title": "SSC", "desc": "Coaching for Staff Selection Commission exams." }
+    }
+  },
+  "gallery": {
+    "title": "Photo gallery",
+    "empty": "Photos coming soon."
+  },
+  "contact": {
+    "title": "Contact us",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "whatsapp": "Chat on WhatsApp",
+    "instagram": "Follow us on Instagram",
+    "directions": "Get directions"
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}

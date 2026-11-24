@@ -1,0 +1,10 @@
+{
+  "name": "radiance-academy",
+  "private": true,
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "dev": "npm run dev -w @radiance/web",
+    "build": "npm run build -w @radiance/web",
+    "lint": "npm run lint -w @radiance/web"
+  }
+}
